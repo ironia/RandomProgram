@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:text="숫자를 입력하세요~^^"
+        android:textSize="34dp"
+        android:id="@+id/textView1"
+        android:layout_gravity="top"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_gravity="center"
+        android:hint = "Max"
+        android:editable="true" />
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="생성"
+        android:id="@+id/btn1"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:onClick="onButton1Clicked"
+        />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="다음"
+        android:id="@+id/btn2"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:onClick = "onButton2Clicked"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:id="@+id/layout01"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/textView2"
+        android:layout_gravity="center"
+        android:background="#ffb03f"
+        android:layout_weight="1.55" />
+
+
+</LinearLayout>
+</LinearLayout>
+
